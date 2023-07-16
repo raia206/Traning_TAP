@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>git log
+
+<div   class="first-section"  >
+    <p   id="web" > web topic</p>
+
+<div style="text-align: right">
+    <ion-button class="button" >
+        <ion-icon name="moon-outline"></ion-icon>
+        Dark Mode
+    </ion-button>
+
+    <ion-button  class="button">
+        <ion-icon name="heart-outline" slot="end"></ion-icon>
+        Favorities
+    </ion-button>
+</div>
+</div>
+    <canvas id="myCanvas" width= 1580 height=80% ></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#03C180";
+        // Draw the triangle
+        ctx.beginPath();
+        ctx.moveTo(1580, 0); // starting point
+        ctx.lineTo(1580, 50); // second point
+        ctx.lineTo(0,0 ); // third point
+        ctx.closePath(); // connect final point to starting point
+        ctx.fill(); // fill the triangle with the chosen color
+
+
+        // Set the fill color for the triangle
+        ctx.fillStyle = "#0768AC";
+        // Draw the triangle
+        ctx.beginPath();
+        ctx.moveTo(0, 0); // starting point
+        ctx.lineTo(0, 50); // second point
+        ctx.lineTo(1580,0 ); // third point
+        ctx.closePath(); // connect final point to starting point
+        ctx.fill(); // fill the triangle with the chosen color
+
+        ctx.font = "15px Arial ";
+        ctx.fillStyle="#03C180";
+        ctx.fillText("Welcome to our website!", 750, 50);
+
+        ctx.fillStyle="#333333";
+        ctx.font = "15px Arial ";
+        ctx.fillText("we have anew design that's fresh ,modern,easy to use", 750, 70);
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<div style="background-color:#F0F9FF ;" >
+  <p style="color: #F0F9FF;">      tttttttttttttttt     </p>
+
+   <div style="background-color:#F0F9FF ;display: flex;">
+    <form role="search" id="form" style= "margin-left: 50px; width: 65%;" >
+      <button  >
+          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </button>
+      <input type="search" id="query" name="q"
+       placeholder="Search..."
+       aria-label="Search through site content" >
+     
+    </form>
+    <select id="sort" name="sort" style="margin-left: 3px;margin-right: 3px; width: 12%; border: #F0F9FF;">
+      <option value="">Sort By</option>
+      <option value="New York"> Sort By:defult</option>
+    </select>
+    <select id="filter" name="filter" style="width: 12%;border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;border: #F0F9FF;">
+      <option value="" >Filter By</option>
+      <option value="New York">Filter By:defult</option>
+    </select>
+   </div>
+ 
+
+  <h2 style= "margin-left: 50px;">"24" Web Topics Found</h2>
+
+
+<div class="info">
+<div class="content">
+    <img src="html.png">
+    <h3>Web development langouge </h3>
+    <p> HTML</p>
+    <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+    </li>
+
+    </ul>
+    <h6> Auther:Sarah Smith </h6>
+</div>
+
+<div class="content">
+  <img src="css.webp">
+  <h3>Web development langouge </h3>
+  <p> CSS</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:David lee </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="javascript.jpg">
+  <h3>Web development langouge </h3>
+  <p> Java Script</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Emily Chen </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="jquery.png">
+  <h3>Frontends Frameworkes and libraries </h3>
+  <p> Jquery</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:John Johnson </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="angular.png">
+  <h3>Frontends Frameworkes and libraries </h3>
+  <p> Angular</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Jessica Davis </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="react.webp">
+  <h3>Frontends Frameworkes and libraries </h3>
+  <p> React</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Daneil Brown </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="vuejs.jpeg">
+  <h3>Frontends Frameworkes and libraries </h3>
+  <p> Vue.js</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Ava Jones </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="nodejs.webp">
+  <h3>Backend Frameworkes and libraries </h3>
+  <p> Node.js</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Michel Kim </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="expressjs.webp">
+  <h3>Backend Frameworkes and libraries </h3>
+  <p> Express JS</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6> Author:Sophia Rodreguez </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="ruby.jpeg">
+  <h3>Backend Frameworkes and libraries </h3>
+  <p> Ruby on rail</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Willian lee </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="django.jpeg">
+  <h3>Backend Frameworkes and libraries </h3>
+  <p> django</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Olivia martinez</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="flask.webp">
+  <h3>Backend Frameworkes and libraries </h3>
+  <p> Flask</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Ethan Thompson </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="sql.png">
+  <h3>Database  and APIs </h3>
+  <p> SQL</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Madison Davis </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="nosql.png">
+  <h3>Database  and APIs</h3>
+  <p> NOSQL</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Isabella  Wilson </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="restapi.jpeg">
+  <h3>Database  and APIs </h3>
+  <p> REST APIs</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Jacob Garcia </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="graphql.png">
+  <h3>Database  and APIs </h3>
+  <p> GraphQL</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Mila Brown </h6>
+
+</div>
+
+
+
+<div class="content">
+  <img src="oauth.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> OAuth</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Evelyn Nguyen</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="json.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> JSON</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Liam Hernandez </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="ajax.gif">
+  <h3>Web Development Concepts and T... </h3>
+  <p> AJAX</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Avery perez </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="websockets.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Websockets</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Victoria Kim </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="responsive.gif">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Responsive design</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Ryan Jones </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="accessibility.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Accessibility</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Samantha Martin </h6>
+
+</div>
+
+<div class="content">
+  <img src="ui.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> User Experience (UX)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Luke Davis </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="ui.png">
+  <h3>Web Development Concepts and T...</h3>
+  <p> User Interface (UI)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Grace Wil </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="design-systems.jpeg">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Design Systems</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Noah Martinez </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="performance.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> performance Optimization</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Chloe Taylor </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="cross-browser.jpeg">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Cross Browser Compatiblity</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author: David lee</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="seo.jpeg">
+  <h3>Web Development Concepts and T...</h3>
+  <p> Search Engine Optimization (SEO)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Emily Kim</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="web-security.jpeg">
+  <h3>Web Development Concepts and T...</h3>
+  <p> Web Security</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Gabriel Hernandez </h6>
+</div>
+
+
+<div class="content">
+  <img src="testing.jpeg">
+  <h3>Web Development Concepts and T...</h3>
+  <p> Testing and Debuging</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Avery Prerz </h6>
+</div>
+
+
+<div class="content">
+  <img src="ci-cd.jpeg">
+  <h3>Web Development Concepts and T... </h3>
+  <p>Continuous Integration Continuous...</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Madison Davis</h6>
+
+</div>
+
+
+
+<div class="content">
+  <img src="devops.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p>DivOps </p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Isabilla Wilson </h6>
+
+</div>
+
+
+
+<div class="content">
+  <img src="cloud.jpeg">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Cloud Computing </p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Jacob Garica </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="docker.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Docker</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Mia Brown</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="microservices.png">
+  <h3>Web Development Concepts and T...</h3>
+  <p> Microservices</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Evelyn Nguyen </h6>
+
+</div>
+
+
+<div class="content">
+  <img src="pwa.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Progressive Web Apps(PWA)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Lima Hernandez</h6>
+
+</div>
+
+
+<div class="content">
+  <img src="wai.jpeg">
+  <h3>Web Development Concepts and T...</h3>
+  <p> Web Accessibility Initiative(WAI)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Avery perez</h6>
+
+</div>
+
+
+
+<div class="content">
+  <img src="cms.png">
+  <h3>Web Development Concepts and T...</h3>
+  <p>  Content Management System(CMS)</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Victoria Kim </h6>
+
+</div>
+
+
+
+<div class="content">
+  <img src="analytics.png">
+  <h3>Web Development Concepts and T... </h3>
+  <p> Web Analytics</p>
+  <ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class='fa fa-star-o' style='color: #ff9f43'></i>
+  </ul>
+  <h6>Author:Ryan Jones </h6>
+
+</div>
+
+<div class="content" style="background-color: #F0F9FF
+">
+
+</div>
+
+
+
+</div>
+<p  style="text-align: center;"> Developed  With ❤️©2023 </p>
+
+</div>
+
+
+</body>
+</html>
